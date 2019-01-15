@@ -15,9 +15,9 @@ function getAndPrintHTMLChunks() {
       console.log(chunk.length);
     });
 
-    // response.on('end', function(){
-    //   console.log('response stream complete');
-    // });
+    response.on('end', function(){
+      console.log('response stream complete');
+    });
 
   });
 
